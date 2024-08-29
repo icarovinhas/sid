@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../estilo/pgcelular.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../imagens/SID-removebg-preview.png" alt="SID.png" id="logo">
+        </div>
+        <i id="burguer" class="bi bi-list" onclick="clickmenu()"></i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <h1>Oque é Python?</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="www.google.com">Dolorum</a> exercitationem sed sequi adipisci, impedit accusamus ut quas cumque molestias, ea fugiat qui rem, eos itaque? Cumque ut provident ea quod! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus, deleniti enim debitis numquam architecto? Esse, similique! Sed, quis laborum. Alias earum labore molestiae deserunt vero quas id a magni?</p>
+        <img src="../imagens/wp8661113-python-logo-wallpapers.jpg" alt="python">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="www.google.com">Dolorum</a> exercitationem sed sequi adipisci, impedit accusamus ut quas cumque molestias, ea fugiat qui rem, eos itaque? Cumque ut provident ea quod! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus, deleniti enim debitis numquam architecto? Esse, similique! Sed, quis laborum. Alias earum labore molestiae deserunt vero quas id a magni?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="www.google.com">Dolorum</a> exercitationem sed sequi adipisci, impedit accusamus ut quas cumque molestias, ea fugiat qui rem, eos itaque? Cumque ut provident ea quod! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus, deleniti enim debitis numquam architecto? Esse, similique! Sed, quis laborum. Alias earum labore molestiae deserunt vero quas id a magni?</p>
+        <img src="../imagens/wp7133293.webp" alt="codigo_python">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="www.google.com">Dolorum</a> exercitationem sed sequi adipisci, impedit accusamus ut quas cumque molestias, ea fugiat qui rem, eos itaque? Cumque ut provident ea quod! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus, deleniti enim debitis numquam architecto? Esse, similique! Sed, quis laborum. Alias earum labore molestiae deserunt vero quas id a magni?</p>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por alunos</p>
+    </footer>
+
+    <script>
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+
+            }
+        }
+
+        function clickmenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

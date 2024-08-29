@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Intregação Digital</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../estilos/celular.css">
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../imagens/SID-removebg-preview.png" alt="SID.png" id="logo">
+        </div>
+        <i id="burguer" class="bi bi-list" onclick="clickmenu()"></i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <div id="informacao">
+            <figure class="container">
+                <a href="pagina01.html"><img src="imagens/wp8661113-python-logo-wallpapers.jpg" alt="python" class="imagem"></a>
+                <a href="pagina01.html"><figcaption class="texto">Oque é Python?</figcaption></a>
+            </figure>
+        </div>
+
+        <div id="informacao">
+            <figure class="container">
+                <a href="pagina01.html"><img src="imagens/wp8661113-python-logo-wallpapers.jpg" alt="python" class="imagem"></a>
+                <a href="pagina01.html"><figcaption class="texto">Oque é Python?</figcaption></a>
+            </figure>
+        </div>
+
+        <div id="informacao">
+            <figure class="container">
+                <a href="pagina01.html"><img src="imagens/wp8661113-python-logo-wallpapers.jpg" alt="python" class="imagem"></a>
+                <a href="pagina01.html"><figcaption class="texto">Oque é Python?</figcaption></a>
+            </figure>
+        </div>
+
+        <div id="informacao">
+            <figure class="container">
+                <a href="pagina01.html"><img src="imagens/wp8661113-python-logo-wallpapers.jpg" alt="python" class="imagem"></a>
+                <a href="pagina01.html"><figcaption class="texto">Oque é Python?</figcaption></a>
+            </figure>
+        </div>
+
+        <div id="informacao">
+            <figure class="container">
+                <a href="pagina01.html"><img src="imagens/wp8661113-python-logo-wallpapers.jpg" alt="python" class="imagem"></a>
+                <a href="pagina01.html"><figcaption class="texto">Oque é Python?</figcaption></a>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por alunos</p>
+    </footer>
+
+    <script>
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+
+            }
+        }
+
+        function clickmenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
