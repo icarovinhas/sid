@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* TABLET */
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+
+    img.foto {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        background-color: #031b58;
+        border-top: none;
+    }
+
+    main {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    main > p {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    img.foto {
+        display: block;
+        margin: 20px auto; /* Centraliza a imagem e adiciona margem */
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        border-radius: 10px;
+    }
+
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        text-align: center; /* Centraliza o menu */
+    }
+
+    menu > ul {
+        display: inline-block; /* Centraliza os itens do menu */
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        background-color: #031b58;
+        border-top: none;
+    }
+
+    main {
+        width: 80%; /* Ajuste conforme necessário */
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0 auto; /* Centraliza o main */
+    }
+
+    main > p {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    i#insta {
+        color: #031b58;
+        font-size: 1.5em;
+    }
+    
+    i#youtube {
+        color: #031b58;
+        font-size: 1.7em;
+    }
+}
