@@ -2,7 +2,7 @@
 
 /* TABLET */
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 760px) and (max-width: 992px) {
     i#burguer {
         display: none;
     }
@@ -21,6 +21,22 @@
     }
 
     main {
-        width: 768px;
+        justify-content: center;
+    }
+
+    div#informacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+        width: 800px;
+    }
+
+    main > div > figure > a > img,
+    main > div > figure > a > figcaption {
+        width: 500px;
+        max-width: 100%;
+        text-align: center;
+        border-radius: 10px;
     }
 }
