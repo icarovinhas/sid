@@ -108,6 +108,11 @@ main > div > figure > a > img {
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
     text-align: left;
+    transition: all 0.3s linear;
+}
+
+main > div > figure > a > img:hover {
+    scale: 1.02;
 }
 
 main > div > figure > a > figcaption {
