@@ -60,20 +60,39 @@ function populateWord(key) {
     }
 }
 
+function removerAcentos(palavra) {
+    return palavra.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function checkword() {
     const letterElements = wordElements[row - 1].querySelectorAll('.word');
+    const wordOfTheDayLower = removerAcentos(wordForTheDay.toLowerCase());
+    const lettersStatus = Array(5).fill(false); // Array para controlar quais letras foram verificadas como verdes
     let numOfCorrectAlphabets = 0;
+
+    // Primeira passagem: verificar letras verdes
     letterElements.forEach((element, index) => {
-        const indexOfLetterInWordOfTheDay = wordForTheDay.toLowerCase().indexOf(element.innerText.toLowerCase());
-        if (indexOfLetterInWordOfTheDay === index) {
+        const letter = removerAcentos(element.innerText.toLowerCase());
+        if (letter === removerAcentos(wordOfTheDayLower[index])) {
             numOfCorrectAlphabets += 1;
             element.classList.add('word-green');
-        } else if (indexOfLetterInWordOfTheDay > 0) {
-            element.classList.add('word-yellow');
-        } else {
-            element.classList.add('word-grey');
+            lettersStatus[index] = true; // Marca a posição correta como já verificada
         }
     });
+
+    // Segunda passagem: verificar letras amarelas
+    letterElements.forEach((element, index) => {
+        const letter = removerAcentos(element.innerText.toLowerCase());
+        if (!lettersStatus[index]) { // Ignorar letras já marcadas como verdes
+            const letterInWordIndex = wordOfTheDayLower.indexOf(letter);
+            if (letterInWordIndex > -1 && !wordElements[row - 1].querySelectorAll('.word')[letterInWordIndex].classList.contains('word-green')) {
+                element.classList.add('word-yellow');
+            } else {
+                element.classList.add('word-grey');
+            }
+        }
+    });
+
     if (numOfCorrectAlphabets === 5) {
         gameOver = true;
         guessedCorrectly = true;
