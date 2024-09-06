@@ -97,7 +97,8 @@ a {
 
 div#informacao {
     background-color: rgb(255, 255, 255);
-    margin-bottom: 40px;
+    margin: 40px auto;
+    text-align: center;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
 }
 
@@ -155,4 +156,3 @@ i#youtube {
     color: #031b58;
     font-size: 1.4em;
 }
-
