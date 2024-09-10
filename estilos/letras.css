@@ -85,6 +85,12 @@ body {
     align-items: center;
 }
 
+div#res {
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+}
+
 .keyboard {
     width: 100%;
     padding-bottom: 1em;

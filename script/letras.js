@@ -6,25 +6,26 @@ const buttonElements = document.querySelectorAll('button');
 let row = 1;
 let letter = 1;
 let guessedCorrectly = false;
+var res = document.querySelector('div#res')
 
 const wordsForTheWeek = [
     'Bolsa', 'Lapso', 'Crime', 'Marca', 'Encho', 
-    'Razão', 'Noção', 'Dorme', 'Tempo', 'Juízo', 'Balde', 'Êxito', 'Entra', 'Vesgo', 'Etnia', 
-    'Susto', 'Neura', 'Ética', 'Honra', 'Houve', 'Bispo', 'Queda', 'Cesta', 'Pesca', 'Sobre', 
-    'Toque', 'Desde', 'Metro', 'Areia', 'Inibe', 'Omite', 'Prato', 'Herói', 'Trama', 'Termo', 
-    'Usado', 'Quais', 'Rosna', 'Pisca', 'Outro', 'Inato', 'Cacho', 'Passo', 'Xerém', 'Álbum', 
+    'Razão', 'Noção', 'Dorme', 'Tempo', 'Juizo', 'Balde', 'Exito', 'Entra', 'Vesgo', 'Etnia', 
+    'Susto', 'Neura', 'Etica', 'Honra', 'Houve', 'Bispo', 'Queda', 'Cesta', 'Pesca', 'Sobre', 
+    'Toque', 'Desde', 'Metro', 'Areia', 'Inibe', 'Omite', 'Prato', 'Heroi', 'Trama', 'Termo', 
+    'Usado', 'Quais', 'Rosna', 'Pisca', 'Outro', 'Inato', 'Cacho', 'Passo', 'Xerem', 'Album', 
     'Junto', 'Kebab', 'Deixa', 'Quati', 'Untei', 'Puxei', 'Ontem', 'Nariz', 'Graça', 'Anzol', 
-    'Rampa', 'Comer', 'Zelar', 'Justo', 'Legal', 'Ordem', 'Obter', 'Gesto', 'Senso', 'Tênis', 
-    'Jogar', 'Aspas', 'Fugir', 'Graxa', 'Fazer', 'Olhar', 'Nobre', 'Balão', 'Vozes', 'Chuva', 
+    'Rampa', 'Comer', 'Zelar', 'Justo', 'Legal', 'Ordem', 'Obter', 'Gesto', 'Senso', 'Tenis', 
+    'Jogar', 'Aspas', 'Fugir', 'Graxa', 'Fazer', 'Olhar', 'Nobre', 'Balao', 'Vozes', 'Chuva', 
     'Gosto', 'Xeque', 'Achar', 'Karma', 'Xampu', 'Yacht', 'Quina', 'Unido', 'Viola', 'Verbo', 
-    'Amado', 'Zarpa', 'Haver', 'Sauna', 'Fisga', 'Jovem', 'Fútil', 'Afoga', 'Jeito', 'Poste', 
+    'Amado', 'Zarpa', 'Haver', 'Sauna', 'Fisga', 'Jovem', 'Futil', 'Afoga', 'Jeito', 'Poste', 
     'Quero', 'Nisso', 'Ouvir', 'Zumbi', 'Resto', 'Quilo', 'Daqui', 'Kiwis', 'Lento', 'Besta', 
-    'Roupa', 'Então', 'Troca', 'Zinco', 'Calma', 'Suflê', 'Briga', 'Filma', 'Foice', 'Hotel', 
+    'Roupa', 'Então', 'Troca', 'Zinco', 'Calma', 'Sufle', 'Briga', 'Filma', 'Foice', 'Hotel', 
     'Ideia', 'Vocês', 'Xingo', 'Igual', 'Jaula', 'Zorra', 'Misto', 'Navio', 'Leite', 'Gosma', 
-    'Globo', 'Ténue', 'Expor', 'Negro', 'Homem', 'Muito', 'Dedão', 'Vento', 'Mexer', 'Sanar', 
+    'Globo', 'Tenue', 'Expor', 'Negro', 'Homem', 'Muito', 'Dedao', 'Vento', 'Mexer', 'Sanar', 
     'Dardo', 'Quase', 'Louco', 'Mania', 'Urina', 'Raspo', 'Moral', 'Veado', 'Hiena', 'Pular', 
-    'Dessa', 'Forma', 'Zanga', 'Ícone', 'Urubu', 'Risos', 'Seção', 'Gaita', 'Bucho', 'Itens', 
-    'Livro', 'Creio', 'Impor', 'Zíper', 'Usura', 'Lápis', 'União'
+    'Dessa', 'Forma', 'Zanga', 'Icone', 'Urubu', 'Risos', 'Secao', 'Gaita', 'Bucho', 'Itens', 
+    'Livro', 'Creio', 'Impor', 'Ziper', 'Usura', 'Lapis', 'Uniao'
 ];
 
 const startDate = new Date('2024-09-03');
@@ -96,10 +97,10 @@ function checkword() {
     if (numOfCorrectAlphabets === 5) {
         gameOver = true;
         guessedCorrectly = true;
-        alert('Parabéns! Você acertou a palavra do dia.');
+        res.innerHTML = ('<p><strong>Parabéns 🎉! Você acertou a palavra do dia.</strong></p>');
     } else if (row === 6) {
         gameOver = true;
-        alert('Tenha mais sorte na próxima vez. A palavra era: ' + wordForTheDay);
+        res.innerHTML = (`<p>Tenha mais sorte na próxima vez. A palavra era: <strong>${wordForTheDay}</strong></p>`);
     }
 }
 
