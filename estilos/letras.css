@@ -132,9 +132,10 @@ footer {
     margin-bottom: 10px; /* Espaço abaixo dos ícones */
 }
 
-footer > p#des {
+footer > p#des > a {
     color: rgb(160, 160, 160);
     font-weight: 0.8em;
+    text-decoration: none;
 }
 
 i#insta {

@@ -77,11 +77,16 @@ main > h1 {
     font-size: 2em;
 }
 
+main > h2 {
+    font-size: 1.5em;
+    margin-left: 8px;
+}
+
 main > p {
     margin-top: 10px;
     margin-left: 8px;
     margin-right: 8px;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: justify;
 }
 
@@ -92,8 +97,13 @@ main > p > a {
 }
 
 h1 {
-    padding-top: 5px;
-    margin-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -124,9 +134,10 @@ footer {
     margin-bottom: 10px; /* Espaço abaixo dos ícones */
 }
 
-footer > p#des {
+footer > p#des > a {
     color: rgb(97, 97, 97);
     font-weight: 0.8em;
+    text-decoration: none;
 }
 
 i#insta {

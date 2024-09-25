@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* CELULAR */
-
 * {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -67,67 +65,6 @@ menu > ul > li > a:hover {
     background-color: #0e3eb8;
 }
 
-main {
-    background-color: rgb(241, 241, 241);
-    color: black;
-    width: 100vw;
-}
-
-.container {
-    display: flex;
-    flex-direction: column-reverse; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-}
-
-.texto {
-    margin-bottom: 0px; /* Espaço entre o texto e a imagem */
-}
-
-.imagem {
-    max-width: 100%; /* Ajusta a largura da imagem conforme necessário */
-}
-
-main > figure {
-    background-color: rgb(228, 228, 228);
-}
-
-a {
-    text-decoration: none;
-}
-
-div#informacao {
-    background-color: rgb(255, 255, 255);
-    margin: 40px auto;
-    text-align: center;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
-}
-
-main > div > figure > a > img {
-    width: 100vw;
-    margin-top: 9px;
-    margin-bottom: 40px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
-    text-align: left;
-    transition: all 0.3s linear;
-}
-
-main > div > figure > a > img:hover {
-    scale: 1.02;
-}
-
-main > div > figure > a > figcaption {
-    padding-top: 30px;
-    font-weight: bolder;
-    color: #031b58;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
-    font-size: 2em;
-}
-
-main > figure > a > figcaption:hover {
-    color: #092E8D;
-}
-
 footer {
     padding: 20px;
     background-color: rgb(228, 228, 228);
@@ -145,6 +82,7 @@ footer {
 footer > p#des > a {
     color: rgb(97, 97, 97);
     font-weight: 0.8em;
+    text-decoration: none;
 }
 
 i#insta {
