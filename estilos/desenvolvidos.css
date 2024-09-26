@@ -65,6 +65,28 @@ menu > ul > li > a:hover {
     background-color: #0e3eb8;
 }
 
+main {
+    text-align: center;
+}
+
+div.pessoa {
+    text-align: center;
+    margin: 20px auto;
+    background-color: #092E8D;
+    height: 180px;
+    width: 420px;
+    border-radius: 15px;
+    color: rgb(235, 235, 235);
+}
+
+div.pessoa > h1 {
+    padding-top: 25px;
+}
+
+div.pessoa > p {
+    padding-top: 10px;
+}
+
 footer {
     padding: 20px;
     background-color: rgb(228, 228, 228);

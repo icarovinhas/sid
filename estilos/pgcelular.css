@@ -149,11 +149,16 @@ p.tutorial {
     margin-left: 12px;
 }
 
+p#creditos {
+    color: gray;
+    font-size: 0.7em;
+}
+
 strong {
     margin-bottom: 10px;
 }
 
-li {
+li.texto {
     margin-top: 10px;
     margin-bottom: 10px;
 }
