@@ -55,12 +55,28 @@
         box-sizing: border-box;
     }
 
+    main > h4 {
+        margin: 20px auto;
+        width: 70%;
+        font-size: 1.1em;
+        box-sizing: border-box;
+    }
+
+    main > ul {
+        margin: 20px auto;
+        width: 70%;
+        box-sizing: border-box;
+        list-style-type: none;
+    }
+
     main > p {
         margin: 20px auto;
         width: 70%;
         font-size: 1.2em;
         box-sizing: border-box;
     }
+
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -126,11 +142,27 @@
         box-sizing: border-box;
     }
 
+    main > h4 {
+        margin: 20px auto;
+        width: 70%;
+        text-align: left;
+        font-size: 1.1em;
+        box-sizing: border-box;
+    }
+
     main > p {
         margin: 20px auto;
         width: 70%;
         font-size: 1.2em;
         box-sizing: border-box;
+    }
+
+    main > ul {
+        margin: 20px auto;
+        width: 70%;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-align: left;
     }
 
     i#insta {

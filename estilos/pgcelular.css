@@ -87,6 +87,11 @@ main > h3 {
     margin-left: 8px;
 }
 
+main > h4 {
+    font-size: 1.1em;
+    margin-left: 8px;
+}
+
 main > p {
     margin-top: 10px;
     margin-left: 8px;
@@ -99,6 +104,19 @@ main > p > a {
     color: #061f5e;
     text-decoration: none;
     font-weight: bold;
+}
+
+main > ul > li {
+    margin-left: 8px;
+}
+
+main > ul {
+    margin-left: 8px;
+    list-style-type: none;
+}
+
+main > ul > li > strong {
+    margin-left: 9px;
 }
 
 h1 {
@@ -116,9 +134,28 @@ h3 {
     margin-bottom: 10px;
 }
 
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 p {
     margin-bottom: 20px;
     font-size: 1.2em;
+}
+
+p.tutorial {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+strong {
+    margin-bottom: 10px;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 main > img {
