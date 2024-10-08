@@ -4,12 +4,18 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
-body, html {
+html, body {
+    height: 100%; /* Garante que o body ocupe 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Coloca os filhos em coluna */
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: rgb(245, 245, 245);
 }
 
@@ -71,20 +77,48 @@ main {
     background-color: rgb(241, 241, 241);
     color: black;
     width: 100vw;
+    flex: 1; /* Faz com que o main ocupe todo o espaço disponível */
+}
+
+div#pesquisa {
+    background-color: rgb(241, 241, 241);
+    margin-top: 20px;
+    text-align: center;
+}
+
+input#search-input {
+    border-radius: 24px;
+    margin: 20px;
+    padding: 10px;
+    width: 95%;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.39);
+}
+
+#link-topo {
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: #082879;
+    padding: 17px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #333;
 }
 
 .container {
     display: flex;
-    flex-direction: column-reverse; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .texto {
-    margin-bottom: 0px; /* Espaço entre o texto e a imagem */
+    margin-bottom: 0px;
 }
 
 .imagem {
-    max-width: 100%; /* Ajusta a largura da imagem conforme necessário */
+    max-width: 100%;
 }
 
 main > figure {
@@ -95,7 +129,7 @@ a {
     text-decoration: none;
 }
 
-div#informacao {
+.informacao {
     background-color: rgb(255, 255, 255);
     margin: 40px auto;
     text-align: center;
@@ -105,7 +139,6 @@ div#informacao {
 main > div > figure > a > img {
     width: 100vw;
     margin-top: 9px;
-    margin-bottom: 40px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
     text-align: left;
@@ -138,8 +171,8 @@ footer {
 
 .icons {
     display: flex;
-    gap: 10px; /* Espaço entre os ícones */
-    margin-bottom: 10px; /* Espaço abaixo dos ícones */
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 footer > p#des > a {

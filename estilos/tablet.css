@@ -25,7 +25,12 @@
         justify-content: center;
     }
 
-    div#informacao {
+    input#search-input {
+        height: 30px;
+        width: 700px;
+    }
+
+    .informacao { /* Alterado de div#informacao para .informacao */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -64,7 +69,12 @@
         justify-content: center;
     }
 
-    div#informacao {
+    input#search-input {
+        height: 30px;
+        width: 777px;
+    }
+
+    .informacao { /* Alterado de div#informacao para .informacao */
         display: flex;
         flex-direction: column;
         align-items: center;

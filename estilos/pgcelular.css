@@ -11,6 +11,7 @@
 
 body, html {
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -69,6 +70,18 @@ menu > ul > li > a:hover {
 
 main {
     color: black;
+}
+
+#link-topo {
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: #082879;
+    padding: 17px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #333;
 }
 
 main > h1 {

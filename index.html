@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Intregação Digital</title>
+    <title>Sistema de Integração Digital</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./estilos/celular.css">
     <link rel="stylesheet" href="./estilos/tablet.css">
-    
-
 </head>
 <body>
     <header>
@@ -28,42 +26,46 @@
     </header>
 
     <main>
-        <div id="informacao">
+        <div id="pesquisa">      
+            <input type="text" id="search-input" placeholder="Faça sua pesquisa aqui..." onkeyup="searchNews()">
+        </div>
+        <a id="link-topo" href="#">&#9650;</a>
+        <div class="informacao">
             <figure class="container">
                 <a href="pagina05.html"><img src="./imagens/Word.png" alt="python" class="imagem"></a>
                 <a href="pagina05.html"><figcaption class="texto">O que é Word?</figcaption></a>
             </figure>
         </div>
 
-        <div id="informacao">
+        <div class="informacao">
             <figure class="container">
                 <a href="pagina04.html"><img src="./imagens/PowerPoint.png" alt="python" class="imagem"></a>
                 <a href="pagina04.html"><figcaption class="texto">O que é PowerPoint?</figcaption></a>
             </figure>
         </div>
 
-        <div id="informacao">
+        <div class="informacao">
             <figure class="container">
                 <a href="pagina03.html"><img src="./imagens/PowerBI.png" alt="python" class="imagem"></a>
                 <a href="pagina03.html"><figcaption class="texto">O que é o Power BI?</figcaption></a>
             </figure>
         </div>
 
-        <div id="informacao">
+        <div class="informacao">
             <figure class="container">
                 <a href="pagina02.html"><img src="./imagens/Teams.png" alt="python" class="imagem"></a>
                 <a href="pagina02.html"><figcaption class="texto">O que é Microsoft Teams?</figcaption></a>
             </figure>
         </div>
 
-        <div id="informacao">
+        <div class="informacao">
             <figure class="container">
                 <a href="pagina01.html"><img src="./imagens/Python.png" alt="python" class="imagem"></a>
                 <a href="pagina01.html"><figcaption class="texto">O que é Selenium Python?</figcaption></a>
             </figure>
         </div>
 
-        <div id="informacao">
+        <div class="informacao">
             <figure class="container">
                 <a href="pagina06.html"><img src="./imagens/Excel.png" alt="python" class="imagem"></a>
                 <a href="pagina06.html"><figcaption class="texto">O que é Excel?</figcaption></a>
@@ -80,5 +82,21 @@
     </footer>
 
     <script src="./script/menu.js"></script>
+    <script>
+        function searchNews() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const newsItems = document.getElementsByClassName('informacao');
+
+            for (let i = 0; i < newsItems.length; i++) {
+                const item = newsItems[i];
+                const caption = item.getElementsByTagName('figcaption')[0].textContent.toLowerCase();
+                if (caption.includes(input)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 </html>
