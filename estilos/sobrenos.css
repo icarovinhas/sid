@@ -80,19 +80,37 @@ main {
     flex: 1; /* Faz com que o main ocupe todo o espaço disponível */
 }
 
-div#pesquisa {
-    background-color: rgb(241, 241, 241);
+main > p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+main > div > h1 {
     margin-top: 20px;
+}
+
+#foto {
     text-align: center;
 }
 
-input#search-input {
-    border-radius: 24px;
-    margin: 20px;
-    padding: 10px;
-    width: 95%;
-    width: 300px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.39);
+div > img {
+    border-radius: 15px;
+    width: 90vw;
+}
+
+#objetivos {
+    background-color: #e0e0e07a;
+}
+
+#missao, #visao, #valores {
+    text-align: center;
+}
+
+#empresa, #olho, #diamante {
+    margin-top: 15px;
+    font-size: 3.9em;
+    color: #0e3eb8;
 }
 
 #link-topo {
@@ -102,63 +120,9 @@ input#search-input {
     background-color: #082879;
     padding: 17px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 15px;
+    bottom: 15px;
     box-shadow: 3px 3px 10px #333;
-}
-
-.container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.texto {
-    margin-bottom: 0px;
-}
-
-.imagem {
-    max-width: 100%;
-}
-
-main > figure {
-    background-color: rgb(228, 228, 228);
-}
-
-a {
-    text-decoration: none;
-}
-
-.informacao {
-    background-color: rgb(255, 255, 255);
-    margin: 40px auto;
-    text-align: center;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
-}
-
-main > div > figure > a > img {
-    width: 100vw;
-    margin-top: 9px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
-    text-align: left;
-    transition: all 0.3s linear;
-}
-
-main > div > figure > a > img:hover {
-    scale: 1.02;
-}
-
-main > div > figure > a > figcaption {
-    padding-top: 30px;
-    font-weight: bolder;
-    color: #031b58;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
-    font-size: 2em;
-}
-
-main > figure > a > figcaption:hover {
-    color: #092E8D;
 }
 
 footer {
