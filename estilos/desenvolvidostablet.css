@@ -20,6 +20,10 @@
         background-color: #031b58;
         border-top: none;
     }
+
+    div.pessoa {
+        width: 400px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -39,5 +43,9 @@
     menu > ul > li > a {
         background-color: #031b58;
         border-top: none;
+    }
+
+    div.pessoa {
+        width: 400px;
     }
 }
