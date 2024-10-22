@@ -3,31 +3,8 @@
 /* TABLET */
 
 @media screen and (min-width: 760px) and (max-width: 992px) {
-    i#burguer {
-        display: none;
-    }
-
-    menu {
-        display: block;
-        text-align: left;
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-
-    menu > ul > li > a {
-        background-color: #031b58;
-        border-top: none;
-    }
-
     main {
         justify-content: center;
-    }
-
-    input#search-input {
-        height: 30px;
-        width: 700px;
     }
 
     .informacao { /* Alterado de div#informacao para .informacao */
@@ -47,33 +24,10 @@
 }
 
 @media screen and (min-width: 992px) {
-    i#burguer {
-        display: none;
-    }
-
-    menu {
-        display: block;
-        text-align: left;
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-
-    menu > ul > li > a {
-        background-color: #031b58;
-        border-top: none;
-    }
-
     main {
         justify-content: center;
     }
-
-    input#search-input {
-        height: 30px;
-        width: 777px;
-    }
-
+    
     .informacao { /* Alterado de div#informacao para .informacao */
         display: flex;
         flex-direction: column;

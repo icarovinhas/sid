@@ -11,23 +11,6 @@
         border-radius: 10px;
     }
 
-    i#burguer {
-        display: none;
-    }
-
-    menu {
-        display: block;
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-
-    menu > ul > li > a {
-        background-color: #031b58;
-        border-top: none;
-    }
-
     main {
         width: 100%;
         box-sizing: border-box;
@@ -88,28 +71,6 @@
         border-radius: 10px;
     }
 
-    i#burguer {
-        display: none;
-    }
-
-    menu {
-        display: block;
-        text-align: left; /* Centraliza o menu */
-    }
-
-    menu > ul {
-        display: inline-block; /* Centraliza os itens do menu */
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-
-    menu > ul > li > a {
-        background-color: #031b58;
-        border-top: none;
-    }
-
     main {
         width: 80%; /* Ajuste conforme necessário */
         text-align: center;
@@ -117,7 +78,7 @@
         padding: 20px;
         margin: 0 auto; /* Centraliza o main */
     }
-
+    
     main > h1 {
         margin: 20px auto;
         width: 70%;

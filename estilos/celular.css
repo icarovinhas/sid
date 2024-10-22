@@ -19,58 +19,12 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
-header {
-    background-color: #092E8D;
+.navbar {
+    background-color: #082879 !important;
 }
 
-div#logo {
-    text-align: center;
-}
-
-img#logo {
-    height: 100px;
-    width: 100px;
-}
-
-header > h1 {
-    color: white;
-    text-align: center;
-    font-size: 2em;
-}
-
-i#burguer {
-    background-color: #061f5e;
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-
-i#burguer:hover {
-    background-color: #0e3eb8;
-    color: rgb(255, 255, 255);
-}
-
-menu {
-    display: none;
-}
-
-menu > ul {
-    list-style-type: none;
-}
-
-menu > ul > li > a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #082879;
-    color: white;
-    border-top: 2px solid #031b58;
-}
-
-menu > ul > li > a:hover {
-    background-color: #0e3eb8;
+#logo {
+    padding-left: 5px;
 }
 
 main {
@@ -78,21 +32,6 @@ main {
     color: black;
     width: 100vw;
     flex: 1; /* Faz com que o main ocupe todo o espaço disponível */
-}
-
-div#pesquisa {
-    background-color: rgb(241, 241, 241);
-    margin-top: 20px;
-    text-align: center;
-}
-
-input#search-input {
-    border-radius: 24px;
-    margin: 20px;
-    padding: 10px;
-    width: 95%;
-    width: 300px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.39);
 }
 
 #link-topo {

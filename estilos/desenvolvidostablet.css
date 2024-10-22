@@ -3,48 +3,12 @@
 /* TABLET */
 
 @media screen and (min-width: 760px) and (max-width: 992px) {
-    i#burguer {
-        display: none;
-    }
-
-    menu {
-        display: block;
-        text-align: left;
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-
-    menu > ul > li > a {
-        background-color: #031b58;
-        border-top: none;
-    }
-
     div.pessoa {
         width: 400px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    i#burguer {
-        display: none;
-    }
-
-    menu {
-        display: block;
-        text-align: left;
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-
-    menu > ul > li > a {
-        background-color: #031b58;
-        border-top: none;
-    }
-
     div.pessoa {
         width: 400px;
     }

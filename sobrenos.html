@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <title>Sobre nós</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
@@ -10,20 +15,36 @@
     <link rel="stylesheet" href="./estilos/sobrenostablet.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <a href="index.html"><img src="./imagens/SID-removebg-preview.png" alt="SID.png" id="logo"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./imagens/SID-removebg-preview.png" alt="SID" id="logo" style="height: 90px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="letras.html">Jogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opção 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                </ul>
+                <form class="d-flex" onsubmit="event.preventDefault();">
+                    <input class="form-control me-2" type="search" id="search-input" placeholder="Faça sua pesquisa aqui...">
+                </form>                
+            </div>
         </div>
-        <i id="burguer" class="bi bi-list" onclick="clickmenu()"></i>
-        <menu id="itens">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="letras.html">Jogo</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
-            </ul>
-        </menu>
-    </header>
+    </nav>
     <main>
         <a id="link-topo" href="#">&#9650;</a>
         <div id="quemsomos">
@@ -47,20 +68,20 @@
         <div id="objetivos">
             <div id="missao">
                 <i id="empresa" class="bi bi-building"></i>
-                <h2>Missão</h2>
-                <p></p>
+                <h2 id="margim">Missão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis quibusdam provident accusamus quasi aperiam, culpa aut exercitationem quam reprehenderit nam totam ex commodi maxime consequuntur facilis? Accusamus, distinctio consectetur!</p>
             </div>
 
             <div id="visao">
                 <i id="olho" class="bi bi-eye"></i>
-                <h2>Visão</h2>
-                <p></p>
+                <h2 id="diminuir">Visão</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis expedita, quibusdam porro maxime iusto suscipit, alias ipsa odio voluptatem rerum qui nam quaerat illo dolore error architecto dolor? Optio, dolorem!</p>
             </div>
 
             <div id="valores">
                 <i id="diamante" class="bi bi-gem"></i>
                 <h2>Valores</h2>
-                <p></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus hic porro libero iste temporibus veniam vitae delectus suscipit nostrum omnis! Tempore quod facere dolores fugiat fugit! Hic necessitatibus perspiciatis nam.</p>
             </div>
         </div>
     </main>
