@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./estilos/pgtablet.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="topo">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="./imagens/SID-removebg-preview.png" alt="SID" id="logo" style="height: 90px;">
@@ -39,15 +39,18 @@
                         <a class="nav-link" href="#">Sobre nós</a>
                     </li>
                 </ul>
-                <form class="d-flex" onsubmit="event.preventDefault();">
-                    <input class="form-control me-2" type="search" id="search-input" placeholder="Faça sua pesquisa aqui...">
-                </form>                
             </div>
         </div>
     </nav>
 
     <main>
-        <a id="link-topo" href="#">&#9650;</a>
+        <div data-scroll="suave" data-anima="scroll">
+            <a href="#topo">
+                <div class="topo">
+                    <img src="imagens/circle-up_white_symbol.png" alt="Voltar ao topo">
+                </div>
+            </a>
+        </div>
         <h1>Oque é Selenium Python?</h1>
         <p>Selenium é uma suíte de ferramentas de código aberto projetada para automatizar navegadores web. Originalmente desenvolvida para testar aplicações web, a flexibilidade do Selenium permitiu que fosse adotada em diversas outras áreas, como raspagem de dados, automação de tarefas administrativas e até mesmo em projetos de aprendizado de máquina.</p>
         <p>Python, por sua vez, é uma linguagem de programação amplamente utilizada devido à sua simplicidade e legibilidade. A combinação de Selenium com Python resulta em uma poderosa ferramenta de automação, onde os scripts escritos em Python controlam navegadores como Chrome, Firefox, Safari, entre outros.</p>

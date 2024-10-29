@@ -1,6 +1,3 @@
-
-let lastInputValue = ''; // Variável para armazenar o último valor de entrada
-
 function searchNews() {
     const input = document.getElementById('search-input').value.toLowerCase();
     const newsItems = document.getElementsByClassName('informacao');
@@ -22,8 +19,6 @@ function searchNews() {
             item.style.display = 'none';
         }
     }
-
-    lastInputValue = input; // Armazena o valor atual
 }
 
 // Adiciona evento de clique ao botão

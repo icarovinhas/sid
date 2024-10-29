@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./estilos/sobrenostablet.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="topo">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="./imagens/SID-removebg-preview.png" alt="SID" id="logo" style="height: 90px;">
@@ -38,15 +38,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre nós</a>
                     </li>
-                </ul>
-                <form class="d-flex" onsubmit="event.preventDefault();">
-                    <input class="form-control me-2" type="search" id="search-input" placeholder="Faça sua pesquisa aqui...">
-                </form>                
+                </ul>                
             </div>
         </div>
     </nav>
     <main>
-        <a id="link-topo" href="#">&#9650;</a>
+        <div data-scroll="suave" data-anima="scroll">
+            <a href="#topo">
+                <div class="topo">
+                    <img src="imagens/circle-up_white_symbol.png" alt="Voltar ao topo">
+                </div>
+            </a>
+        </div>
         <div id="quemsomos">
             <h1>Quem Somos</h1>
         </div>

@@ -34,16 +34,17 @@ main {
     flex: 1; /* Faz com que o main ocupe todo o espaço disponível */
 }
 
-#link-topo {
-    border-radius: 50%;
-    text-decoration: none;
-    color: white;
-    background-color: #082879;
-    padding: 17px;
+.topo {
+    background-color: #092E8D;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
-    box-shadow: 3px 3px 10px #333;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
