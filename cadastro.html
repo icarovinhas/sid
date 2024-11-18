@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="estilos/desenvolvidos.css">
     <link rel="stylesheet" href="estilos/desenvolvidostablet.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                 </ul>                
             </div>
         </div>
-    </nav>    
+    </nav>
 
     <main>
         <div data-scroll="suave" data-anima="scroll">
@@ -49,55 +50,40 @@
                 </div>
             </a>
         </div>
-        <div class="pessoa">
-            <h1>Ícaro Menezes dos Santos Vinhas</h1>
-            <img src="" alt="">
-            <p>Desenvolvedor do site, Programador e Designer</p>
-            <a href=""></a>
+        <div>
+            <h1>Cadastro</h1>
+            <ul>
+                <li>
+                    Nome <br>
+                    <input type="text" id="txtNome" placeholder="Ex: João Silva">
+                </li>
+                <li>
+                    Curso <br>
+                    <input type="text" id="txtCurso" placeholder="Ex: Engenharia de Software">
+                </li>
+                <li>
+                    Email <br>
+                    <input type="email" id="txtEmail" placeholder="Ex: joao.silva@email.com">
+                </li>
+                <li>
+                    <button id="btnSalvar" onclick="salvar()">Salvar</button>
+                </li>
+            </ul>
         </div>
-        <div class="pessoa">
-            <h1>Guilherme Brandão de Araújo</h1>
-            <img src="" alt="">
-            <p>Desenvolvedor do site e Pesquisador</p>
-            <a href=""></a>
+        <div>
+            <table id="tblListar" border="1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Nome</th>
+                        <th>Curso</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
-        <div class="pessoa">
-            <h1>Júlio César Aragão Santana</h1>
-            <img src="" alt="">
-            <p>Desenvolvedor do site e Pesquisador</p>
-            <a href=""></a>
-        </div>
-        <div class="pessoa">
-            <h1>João Vitor Souza Bomfim</h1>
-            <img src="" alt="">
-            <p>Desenvolvedor do site e Pesquisador</p>
-            <a href=""></a>
-        </div>
-        <div class="pessoa">
-            <h1>Igor Santos De Britto</h1>
-            <img src="" alt="">
-            <p>Pesquisador e Apresentador</p>
-            <a href=""></a>
-        </div>
-        <div class="pessoa">
-            <h1>Ângelo de Carvalho</h1>
-            <img src="" alt="">
-            <p>Pesquisador</p>
-            <a href=""></a>
-        </div>
-        <div class="pessoa">
-            <h1>Diego Ailton Silva de Araújo</h1>
-            <img src="" alt="">
-            <p>Apresentador</p>
-            <a href=""></a>
-        </div>
-        <div class="pessoa">
-            <h1>Anthony Kevin</h1>
-            <img src="" alt="">
-            <p>Apresentador</p>
-            <a href=""></a>
-        </div>
-    </main>
+    </main>        
 
     <footer>
         <div class="icons">
@@ -111,7 +97,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="./script/menu.js"></script>
+    <script src="./script/cadastro.js"></script>
 </body>
 
 </html>

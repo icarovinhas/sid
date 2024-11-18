@@ -2,9 +2,9 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
 }
 
 body, html {
@@ -37,7 +37,12 @@ main {
     align-items: center;
 }
 
+/* Estilização da div 'pessoa' */
 div.pessoa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 20px auto;
     background-color: #092E8D;
@@ -45,14 +50,20 @@ div.pessoa {
     width: 300px;
     border-radius: 15px;
     color: rgb(235, 235, 235);
+    padding: 20px;
 }
 
 div.pessoa > h1 {
-    padding-top: 25px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    word-wrap: break-word; /* Permite quebra de linha se necessário */
 }
 
 div.pessoa > p {
-    padding-top: 10px;
+    font-size: 1em;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 footer {

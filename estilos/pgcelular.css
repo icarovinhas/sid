@@ -4,7 +4,6 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-
     margin: 0px;
     padding: 0px;
 }
@@ -78,17 +77,39 @@ main > p > a {
     font-weight: bold;
 }
 
+main > ul {
+    margin-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
 main > ul > li {
     margin-left: 8px;
+    margin-bottom: 8px;
 }
 
-main > ul {
-    margin-left: 8px;
+main > ol {
+    margin-left: 20px;
+    padding-left: 20px; /* para alinhamento dos números */
+    counter-reset: item;
+}
+
+main > ol > li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    text-align: justify;
     list-style-type: none;
+    position: relative;
+    padding-left: 25px;
 }
 
-main > ul > li > strong {
-    margin-left: 9px;
+main > ol > li:before {
+    counter-increment: item;
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #092E8D;
 }
 
 h1 {
@@ -137,6 +158,13 @@ li.texto {
 
 main > img {
     width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main > iframe {
+    width: 100vw;
+    height: 315px;
     margin-top: 20px;
     margin-bottom: 20px;
 }

@@ -1,15 +1,31 @@
 @charset "UTF-8";
 
-/* TABLET */
-
 @media screen and (min-width: 760px) and (max-width: 992px) {
     div.pessoa {
         width: 400px;
     }
+
+    div.pessoa > h1 {
+        font-size: 2em;
+    }
+
+    div.pessoa > p {
+        font-size: 1.5em;
+    }
 }
 
+/* Estilos para telas maiores */
 @media screen and (min-width: 992px) {
     div.pessoa {
-        width: 400px;
+        width: 600px;
+        height: 220px;
+    }
+
+    div.pessoa > h1 {
+        font-size: 2.5em; /* Aumenta o tamanho do nome em telas grandes */
+    }
+
+    div.pessoa > p {
+        font-size: 1.8em; /* Aumenta o tamanho da função em telas grandes */
     }
 }

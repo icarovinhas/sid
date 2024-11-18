@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 760px) and (max-width: 992px) {
 
-    img.foto {
+    .foto {
         display: block;
         margin: 20px auto;
         max-width: 70%;
@@ -52,19 +52,24 @@
         list-style-type: none;
     }
 
+    main > ol {
+        margin: 20px auto; /* Mesma distância do h1 */
+        width: 70%; /* Alinha a largura ao h1 */
+        box-sizing: border-box;
+        list-style-type: decimal;
+    }
+
     main > p {
         margin: 20px auto;
         width: 70%;
         font-size: 1.2em;
         box-sizing: border-box;
     }
-
-    
 }
 
 @media screen and (min-width: 992px) {
 
-    img.foto {
+    .foto {
         display: block;
         margin: 20px auto; /* Centraliza a imagem e adiciona margem */
         max-width: 70%; /* Garante que a imagem não ultrapasse a largura do contêiner */
@@ -78,7 +83,7 @@
         padding: 20px;
         margin: 0 auto; /* Centraliza o main */
     }
-    
+
     main > h1 {
         margin: 20px auto;
         width: 70%;
@@ -126,11 +131,19 @@
         text-align: left;
     }
 
+    main > ol {
+        margin: 20px auto; /* Mesma distância do h1 */
+        width: 70%; /* Alinha a largura ao h1 */
+        box-sizing: border-box;
+        list-style-type: decimal;
+        text-align: left;
+    }
+
     i#insta {
         color: #031b58;
         font-size: 1.5em;
     }
-    
+
     i#youtube {
         color: #031b58;
         font-size: 1.7em;
