@@ -232,5 +232,12 @@ i#youtube {
     background-color: #0d37a1; /* Cor de fundo ao passar o mouse */
 }
 
+.audio-custom {
+    margin-left: 8px; /* Margem lateral para celulares */
+    margin-right: 8px; /* Margem lateral para celulares */
+    width: 100%; /* Garante que o áudio ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui as margens no cálculo da largura */
+}
+
 
 
