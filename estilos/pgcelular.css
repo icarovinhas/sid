@@ -201,3 +201,36 @@ i#youtube {
     color: #031b58;
     font-size: 1.4em;
 }
+
+#accessibility-buttons {
+    position: fixed;
+    right: 10px; /* Mantém na lateral direita */
+    top: 70%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Garante que fique centralizado */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#accessibility-buttons button {
+    background-color: #082879; /* Cor de fundo */
+    color: white; /* Cor do texto ou ícone */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas para um design mais amigável */
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer; /* Indica que é clicável */
+    transition: background-color 0.3s; /* Transição suave para efeitos */
+}
+
+#accessibility-buttons button:hover {
+    background-color: #0d37a1; /* Cor de fundo ao passar o mouse */
+}
+
+
+
